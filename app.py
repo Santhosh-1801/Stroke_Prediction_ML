@@ -31,7 +31,7 @@ def result():
     #     scaler = pickle.load(scaler_file)
     # x=scaler.transform(x)
 
-    model_path=os.path.join(r'F:\StrokrPrediction\models\lightgbm-model-joblib-file.sav')
+    model_path=os.path.join('lightgbm-model-joblib-file.sav')
     # boost = Booster.save_model(model_path)
     dt = joblib.load(model_path,'r')
 
